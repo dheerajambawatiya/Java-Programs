@@ -1,0 +1,17 @@
+git clone   //use git reposatery to local system to import from server(git clone thhps//:....)
+cd  /change directory( cd desktop)
+git status   //to know about any update... if any then provide some info
+git config --global user.name "manojpatidar"   //for configur name
+git config --global user.email "email"    //for configur email
+   
+<!--commands for add new file and commit successfully on server-->>
+1   git add   //use for commit some file(git add abc.text). Udes once when we are adding any file first time
+2   git commit -m 'any message'  //using for commit but will not reflect to server still.
+3   git push   //this will finally reflecting on server    
+4   git pull   // used for import changes which are not containing local machin.
+
+
+<!--shortcut-->
+
+1 git add . ///will add all the changes.
+2 git commit -a -m "comment"   //will commit all changes
