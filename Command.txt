@@ -1,7 +1,7 @@
 git clone   //use git reposatery to local system to import from server(git clone thhps//:....)
 cd  /change directory( cd desktop)
 git status   //to know about any update... if any then provide some info
-git config --global user.name "manojpatidar"   //for configur name
+git config --global user.name "dheerajambawatiya"   //for configur name
 git config --global user.email "email"    //for configur email
    
 <!--commands for add new file and commit successfully on server-->>
