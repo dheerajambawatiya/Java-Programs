@@ -2,7 +2,7 @@ class test
 {
 public static void main(String args []) 
 {
-char c= "Hello\u0001 W\u0001rld";
+char c= "Hell\u0001 W\u0001rld";
 System.out.println(c);
 }
 } 
