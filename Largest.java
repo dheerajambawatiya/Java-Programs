@@ -7,6 +7,7 @@ class Largest
 		System.out.println("Eneter Size");
 		int n;
 		n=sc.nextInt();
+		System.out.println("Enter Your Data");
 		int a[]=new int[n];
 		for(int i=0;i<n;i++)
 		{
