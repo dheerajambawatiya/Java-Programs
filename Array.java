@@ -1,33 +1,27 @@
 import java.util.Scanner;
-class Array
-{
-    public static void main(String[] args) 
-    {
-        int n, sum = 0,max=0,min=0;
-        float avg=0;
-        Scanner s = new Scanner(System.in);
-        System.out.print("Enter no. of elements you want in array");
-        n = s.nextInt();
-        int a[] = new int[n];
-        System.out.println("Enter all the elements");
-        for(int i = 0; i < n; i++)
-        {
-            a[i]=s.nextInt();
-            sum=sum + a[i];
-            avg = sum/n;
-                if(max < a[i])
-            {
-                max = a[i];
-            }
-           else  
-            min = a[i];
-        }
-        System.out.println("Sum"+sum);
-           System.out.println("Avg"+avg);
-           System.out.println("min"+min); 
-           System.out.println("max"+max); 
-    }
+class Array {
+	public static void main(String args[]) {
+		int num[][] = new int[4][4];
+		int rowSum[] = new int[num.length];
+		int columnSum[] = new int[num[0].length];
+		int i , j ,sum=0;
+		Scanner in = new Scanner(System.in);
+		for(i=0;i<num.length;i++) {
+			for(j=0;j<num[i].length;j++) {
+				System.out.print("Enter number["+i+","+j+"]:");
+				num[i][j] = in.nextInt();
+				sum += num[i][j];
+				rowSum[i] += num[i][j];
+				columnSum[j] += num[i][j];
+			}
+		}
+		for(i=0;i<num.length;i++) {
+			for(j=0;j<num[i].length;j++)
+				System.out.println("\t" +num[i][j]);
+			System.out.println("\t" +rowSum[i]);
+			}
+		for(j=0;j<num[0].length;j++)
+			System.out.print("\t" +columnSum[j]);
+		System.out.print("\t" +sum);
+	}
 }
-     
-       
-  
