@@ -1,4 +1,4 @@
-abstract class Figure {
+abstract class Figure {         // Only compile by Figure
 	double dim1;
 	double dim2;
 	Figure(double a , double b) {
@@ -25,7 +25,7 @@ class Triangle extends Figure {
 		return dim1 * dim2 / 2;
 	}
 }
-class AbstractAreas {
+class AbstractAreas {				//Run and compile by AbstractAreas
 	public static void main(String args[]) {
 		Rectangle r = new Rectangle(9,5);
 		Triangle t = new Triangle(10,8);
