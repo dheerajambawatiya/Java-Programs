@@ -27,8 +27,8 @@ class Triangle extends Figure {
 }
 class AbstractAreas {				//Run and compile by AbstractAreas
 	public static void main(String args[]) {
-		Rectangle r = new Rectangle(9,5);
-		Triangle t = new Triangle(10,8);
+		Rectangle r = new Rectangle(9,5);		// a=9 , b=5
+		Triangle t = new Triangle(10,8);		//a=10 , b=8
 		Figure fig;
 		fig = r;
 		System.out.println("Area is :" +fig.area());
