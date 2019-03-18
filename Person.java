@@ -4,7 +4,7 @@ enum Gender {
 	public static Gender acceptGender() {
 		Scanner in = new Scanner(System.in);
 		String str = in.nextLine();
-		if(str.trim().toLowerCase().equals("male"))
+		if(str.trim().toLowerCase().equals("male"))		//It remove spaces and lower case.
 			return Male;
 		else
 			return Female;
