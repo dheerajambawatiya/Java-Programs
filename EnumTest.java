@@ -26,3 +26,8 @@ class EnumTest {
 		}
 	}
 }
+
+
+
+
+// equals(), == ,switch works with enum
