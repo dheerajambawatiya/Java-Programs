@@ -1,0 +1,68 @@
+interface EmpInterface {
+	void showData();
+	void acceptData();
+} 
+
+// Save this as EmpInterface.java in a folder.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import java.util.Scanner;
+class Employee implements EmpInterface {
+	protected int code;
+	protected String name;
+	protected String dept;
+	protected String desig;
+	protected float salary;
+	public Employee() {
+		name = new String();
+		dept = new String();
+		desig = new String();
+	}
+	public void acceptData() {
+		Scanner in = new Scanner(System.in);
+		System.out.println("Enter code :");
+		code = in.nextInt();
+		in.nextLine(); 				//For remove enter or we can say it is used when string is come after integer part.
+		System.out.println("Enter name :");
+		name = in.nextLine();
+		System.out.println("Enter dept :");
+		dept = in.nextLine();
+		System.out.println("Enter desig :");
+		desig = in.nextLine();
+		System.out.println("Enter salary :");
+		salary = in.nextFloat();		
+	}
+	public void showData() {	
+		System.out.println("Code :" +code);
+		System.out.println("Name :" +name);
+		System.out.println("Department :" +dept);
+		System.out.println("Designation :" +desig);
+		System.out.println("Salary :" +salary);
+	}
+	public float getHra() {
+		return 0.2f * salary;
+	}
+	public static void main(String args[]) {
+		Employee e = new Employee();
+		e.acceptData();
+		e.showData();
+		System.out.println("HRA is :" +e.getHra());
+		EmpInterface e1 = new Employee();
+		e1.acceptData();
+		e1.showData();       				// It can't give e1,getHra(); becouse it can only call interface methods.
+	}
+}
+
+      // save this as Employee.java in same folder where EmpInterface.java is saved.
