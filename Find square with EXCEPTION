@@ -1,0 +1,39 @@
+class BigException extends Exception {
+	protected String msg;
+	public BigException() {}
+	public BigException(String msg) {
+		this.msg = msg;
+	}
+	public String getMsg() {
+		return msg;
+	}
+	public void setMsg(String msg) {
+		this.msg = msg;
+	}
+}
+class Exception1 {
+	public static void main(String args[]) {
+		int num = 0;
+		try {		
+			num = Integer.parseInt(args[0]);
+			if(num > 100) {
+				BigException b = new BigException("Number too big:");
+				num = 0;
+				throw b;
+			}
+		}
+		catch(NumberFormatException ne) {               //it comes when its not able convers string into integer.
+			System.out.println("Invalid format");
+		}
+		catch(ArrayIndexOutOfBoundsException ae) {      // it comes when no arguments are given
+			System.out.println("Invalid Index");
+		}		
+		catch(Exception e) {                            // it catches all the exception( only it can be used inside catch)
+			System.out.println("Some Error");
+		}
+		System.out.println("Square is  :" +Math.pow(num,2));
+	}
+}
+
+
+// at the time of compile we have to use "java Exception1 +num" ,  for example java Exception1 50.
