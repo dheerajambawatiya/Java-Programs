@@ -36,5 +36,6 @@ class Meta2 {
 		myMeth();
 	}
 }
+ // Here we declare two annotations.It then uses those annotations to annotate a class and a method.
 			
 	
