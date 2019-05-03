@@ -1,0 +1,10 @@
+import java.util.*;
+
+public class MySearchArr {
+	public static void main(String[] args) {
+		String[] names = { "Suchita", "Vikash", "Charu", "Deepak", "Mehtab" };
+		Arrays.sort(names);
+		System.out.println("Searching Collection : " + Arrays.binarySearch(names, "Suchita"));
+		System.out.println("Searching Collection : " + Arrays.binarySearch(names, "Zeba"));
+	}
+}
