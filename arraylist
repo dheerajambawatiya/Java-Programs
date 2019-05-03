@@ -1,0 +1,17 @@
+import java.util.*;
+
+public class MyListArr {
+	public static void main(String[] args) {
+		List<String> e = new ArrayList<String>();
+		e.add("Suchita");
+		e.add("Vikash");
+		e.add("Deepak");
+		e.add("Charu");
+		e.add("Preeti");
+		String[] str = new String[2];
+		str = e.toArray(str);
+		for (String s : str) {
+			System.out.println(s);
+		}
+	}
+}
