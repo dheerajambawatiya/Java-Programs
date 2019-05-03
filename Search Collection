@@ -1,0 +1,15 @@
+import java.util.*;
+
+public class MySearchColl {
+	public static void main(String[] args) {
+		ArrayList<String> e = new ArrayList<String>();
+		e.add("Suchita");
+		e.add("Vikash");
+		e.add("Charu");
+		e.add("Deepak");
+		e.add("Mehtab");
+		Collections.sort(e);
+		System.out.println("Searching Collection : " + Collections.binarySearch(e, "Suchita"));
+		System.out.println("Searching Collection : " + Collections.binarySearch(e, "Rahul"));
+	}
+}
