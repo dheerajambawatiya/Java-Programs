@@ -6,9 +6,9 @@ class Duplicate {
            		for (j =i+1; j<size;j++) {
 	 		        if (arr[i] == arr[j])  
                     		System.out.print(arr[i] + " "); 
-            			} 
-        		} 
-    		} 
+            		} 
+        	} 
+    	} 
 	public static void main(String[] args) { 
 	        Duplicate repeat = new Duplicate(); 
         	int arr[] = {1,2,3,1,4,5,2}; 
